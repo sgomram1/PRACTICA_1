@@ -23,3 +23,6 @@ bin/testPoint2D: testPoint2D.cpp Point2D.o
 
 Shape.o: Shape.h Shape.cpp
 	g++ -c Shape.cpp
+
+Circle.o: Circle.h Circle.cpp Shape.h Point2D.h
+	g++ -c Circle.cpp
